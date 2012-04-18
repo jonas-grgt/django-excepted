@@ -8,8 +8,5 @@ class ExceptionHandlingMiddleware(object):
             getattr(exception, "render")
         except AttributeError:
             return None
-        
+
         return exception.render(request)
-
-        return None
-
