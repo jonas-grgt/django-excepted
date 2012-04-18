@@ -1,5 +1,7 @@
 from django.conf.urls import patterns, include, url
 
+import exception_madness 
+
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
@@ -14,4 +16,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+
+    #url(r'^foobar', 'exception_madness.views.will_throw_exception'),
+    url(r'', include('exception_madness.urls')),
 )
