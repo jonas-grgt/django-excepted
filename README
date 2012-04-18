@@ -4,7 +4,7 @@ You can still throw regular exceptions which will still be evaluated by django a
 
 USAGE:
     class ProductNotFound(Exception):
-        def render(self):
+        def render(self, request):
             return HttpResponse("You could ofcourse use render_to_response or any response object")
 
 INSTALLATION:
