@@ -9,7 +9,7 @@ class ExceptionHandlingMiddleware(object):
         except AttributeError:
             return None
         
-        return exception.render()
+        return exception.render(request)
 
         return None
 
