@@ -1,0 +1,15 @@
+Middleware that handles upon custom exception classes.
+The custom exception classes must have a render method, which return a valid response object.
+You can still throw regular exceptions which will still be evaluated by django as 404 responses.
+
+USAGE:
+    class ProductNotFound(Exception):
+        def render(self):
+            return HttpResponse("You could ofcourse use render_to_response or any response object")
+
+INSTALLATION:
+    pip install -e git+http://github.com/jonasgeiregat/django-excepted.git#django_excepted
+
+    And add django_excepted.middleware.ExceptionHandlingMiddleware to your MIDDLEWARE_CLASSES
+
+
