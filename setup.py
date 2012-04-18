@@ -5,5 +5,5 @@ setup(name='django-404',
         description='',
         author='Jonas Geiregat',
         author_email='jonas@geiregat.org',
-        packages=['django-404']
+        packages=['django_excepted']
         )
