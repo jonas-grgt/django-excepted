@@ -8,8 +8,7 @@ USAGE:
             return HttpResponse("You could ofcourse use render_to_response or any response object")
 
 INSTALLATION:
-    pip install -e git+http://github.com/jonasgeiregat/django-excepted.git#django_excepted
+    pip install -e git+http://github.com/jonasgeiregat/django-excepted.git#egg=django_excepted
 
-    And add django_excepted.middleware.ExceptionHandlingMiddleware to your MIDDLEWARE_CLASSES
-
+    And add django_excepted.middleware.ExceptionHandlingMiddleware as the last in your MIDDLEWARE_CLASSES.
 
